@@ -2,35 +2,32 @@
 
 /*Configurações gerais*/
 *{
-    margin: 1px;
-    padding: 1px;
+    margin: 0px;
+    padding: 0px;
 }
 
 /*Configurações do header*/
-header > div#pfoto > div#foto{
+header > div#foto{
     background: rgba(0, 0, 255, 0.56) url(../imagens/foto.png) -3px center no-repeat;
     background-size: 100%;
-    margin: 0px 0px 0px 0px;
+    margin: 8px 0px 0px 8px;
     width: 127px;
     height: 127px;
     border-radius: 50%;
     display: inline-block;
 }
-header > div#pfoto{
-    display: inline-block;
-    border: 1px solid black;
-    height: 200px;
-    width: 200px;
-}
 header > div#titulo{
-    display: inline-block;
-    border: 1px solid black;
-    top:100px;
+    display: inline;
+    position: absolute;
+    left:143px;
+    top: 50%;
+    transform: translate(0px, -50%);
+}
+header > div#titulo > svg{
+    position: absolute;
 }
 header {
     border: 1px solid black;
-}
-h1{
-    display:inline-block;
-    border: 1px solid black;
+    height:143px;
+    position: relative;
 }
