@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*Configurações gerais*/
+*{
+    margin: 1px;
+    padding: 1px;
+}
+
+/*Configurações do header*/
+header > div#pfoto > div#foto{
+    background: rgba(0, 0, 255, 0.56) url(../imagens/foto.png) -3px center no-repeat;
+    background-size: 100%;
+    margin: 0px 0px 0px 0px;
+    width: 127px;
+    height: 127px;
+    border-radius: 50%;
+    display: inline-block;
+}
+header > div#pfoto{
+    display: inline-block;
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+}
+header > div#titulo{
+    display: inline-block;
+    border: 1px solid black;
+    top:100px;
+}
+header {
+    border: 1px solid black;
+}
+h1{
+    display:inline-block;
+    border: 1px solid black;
+}
