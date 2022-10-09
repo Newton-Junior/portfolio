@@ -13,29 +13,30 @@ header > div#foto{
     background: rgba(0, 0, 255, 0.56) url(../imagens/foto.png) -3px center no-repeat;
     background-size: 100%;
     margin: 16px 0px 0px 16px;
-    width: 111px;
-    height: 111px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     display: inline-block;
 }
 header > div#titulo{
     display: inline;
     position: absolute;
-    left:143px;
+    left:122px;
     top: 50%;
-    transform: translate(0px, -50%);
+    transform: translate(0%, -50%);
 }
-header > div#titulo > svg{
-    position: relative;
+header > div#titulo > span{
+    height: 7.5px;
+    width: 45px;
+    border-radius: 4.5px;
+    background-color: rgba(0, 0, 255, 0.56);
+
 }
 header > div#titulo > h1{
     font-family: 'Rubik', Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 1.5em;
     color: rgb(47, 43, 43);
-}
-header > div#titulo > svg{
-    margin-top: 7px;
 }
 header{
     height:143px;
