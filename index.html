@@ -6,47 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1">
     <title>Portifólio de Newton Lemes</title>
     <link rel="stylesheet" href="estilos/style.css">
-    <script>
-        var conf=1
-        function apareceMenu(){
-            if (conf==1){
-                conf=2;
-                document.getElementById("naveg").style.transform="translateX(1px)";
-                document.getElementById("l1").style.transform="rotate(45deg) translate(1px, 1px)";
-                document.getElementById("l2").style.visibility="hidden";
-                document.getElementById("l3").style.transform="rotate(-45deg)";
-            }else{
-                conf=1;
-
-            }
-
-        }
-    </script>
 </head>
 <body>
-    <header>        
-        <div id="foto"></div>
-        <div class="divmenu" onclick="apareceMenu()">
+    <header>
+        <div id="menu">
             <div id="l1"></div>
             <div id="l2"></div>
             <div id="l3"></div>
-        </div>
+        </div>    
+        <div id="foto"></div>
         <div id="titulo">
             <h1>Newton Lemes</h1>
             <span></span>            
         </div>
-        
-         <nav>
-             <ul id="naveg">
-                 <li id="1"><a href="/">Início</a> </li>
-                <li id="2"><a href="/">Sobre mim</a></li>
-                 <li id="3"><a href="/">Projetos</a></li>
-                <li id="4"><a href="/">Contato</a></li>
-            </ul>
-        </nav>
     </header>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi atque quos assumenda ipsa, ab ea sunt amet officiis consequatur vel eaque accusantium voluptas ducimus corporis harum esse rem at architecto. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur non placeat dignissimos eum aperiam mollitia ipsa labore neque consequuntur, dicta porro quia illum nemo ipsum molestiae quas debitis deserunt dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium animi sit culpa aut nesciunt recusandae nostrum quod hic amet. Dignissimos quasi dolorum architecto corrupti quas velit, nam quisquam eveniet assumenda.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi atque quos assumenda ipsa, ab ea sunt amet officiis consequatur vel eaque accusantium voluptas ducimus corporis harum esse rem at architecto. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur non placeat dignissimos eum aperiam mollitia ipsa labore neque consequuntur, dicta porro quia illum nemo ipsum molestiae quas debitis deserunt dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium animi sit culpa aut nesciunt recusandae nostrum quod hic amet. Dignissimos quasi dolorum architecto corrupti quas velit, nam quisquam eveniet assumenda.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi atque quos assumenda ipsa, ab ea sunt amet officiis consequatur vel eaque accusantium voluptas ducimus corporis harum esse rem at architecto. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur non placeat dignissimos eum aperiam mollitia ipsa labore neque consequuntur, dicta porro quia illum nemo ipsum molestiae quas debitis deserunt dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium animi sit culpa aut nesciunt recusandae nostrum quod hic amet. Dignissimos quasi dolorum architecto corrupti quas velit, nam quisquam eveniet assumenda.</p>
+    <nav id="naveg"></nav>
 </body>
 </html>
