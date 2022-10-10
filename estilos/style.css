@@ -62,13 +62,14 @@ nav#naveg{
 nav#naveg > ul{
     list-style: none;
     display: flex;
-    top: 8vh;
+    top: 0vh;
     right: 0px;
     width: 100vh;
     height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    margin-top: -50px;
 }
 nav#naveg > ul > li{
     letter-spacing: 3px;;
