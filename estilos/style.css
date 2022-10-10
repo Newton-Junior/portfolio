@@ -32,6 +32,7 @@ header > div#menu{
     border:1px solid black;
     border-radius: 4px;
     background-color: rgba(209, 209, 253, 0.744);
+    z-index: 1;
 }
 header > div#menu > div{
     height: 3px;
@@ -52,7 +53,33 @@ nav#naveg{
     width: 100vw;
     height: 100vh;
     background-color:rgba(209, 209, 253, 0.744);
+    display: none;
+    opacity: 0;
+    justify-content: space-around;
+    align-items: center;
+    transition: opacity 1s;
 }
+nav#naveg > ul{
+    list-style: none;
+    display: flex;
+    top: 8vh;
+    right: 0px;
+    width: 100vh;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+nav#naveg > ul > li{
+    letter-spacing: 3px;;
+}
+nav#naveg > ul > li > a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+
 header > div#foto{
     background: var(--cor1) url(../imagens/foto.png) -3px center no-repeat;
     background-size: 100%;

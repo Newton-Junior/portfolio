@@ -6,10 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1">
     <title>Portifólio de Newton Lemes</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <script>
+        var closeornot=1;
+        var opacitySet=0;
+        var displaySet=0;
+        function alteraDisplay(){
+            if(displaySet==0){
+                document.getElementById("naveg").style.display="flex";
+                displaySet=1;
+            }else{
+                displaySet=0;
+                document.getElementById("naveg").style.display="none";
+            }
+        }
+        function alteraOpacity(){
+            if(opacitySet==0){
+                document.getElementById("naveg").style.opacity="1";
+                opacitySet=1;
+            }else{
+                document.getElementById("naveg").style.opacity="0";
+                opacitySet=0;
+            }
+        }
+        function exibeMenu(){
+            if(closeornot == 1){
+                alteraDisplay();
+                setTimeout(alteraOpacity,1);
+                closeornot=2;
+            }else{ 
+                setTimeout(alteraDisplay,1000);
+                setTimeout(alteraOpacity,1);         
+                closeornot=1;
+            }
+        };
+    </script>
 </head>
 <body>
     <header>
-        <div id="menu">
+        <div id="menu" onclick="exibeMenu()">
             <div id="l1"></div>
             <div id="l2"></div>
             <div id="l3"></div>
@@ -20,6 +54,13 @@
             <span></span>            
         </div>
     </header>
-    <nav id="naveg"></nav>
+    <nav id="naveg">
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre mim</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
