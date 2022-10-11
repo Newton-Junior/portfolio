@@ -125,3 +125,12 @@ section#apresentacao > p{
     font-size: 1.3em;
     border-radius: 5px;
 }
+section#apresentacao > div#redessociais{
+    margin: 85px auto 0px auto;
+    width: 75vw;
+    display: flex;
+    justify-content: space-around;
+}
+section#apresentacao > div#redessociais > img{
+    width: 52px;
+}
