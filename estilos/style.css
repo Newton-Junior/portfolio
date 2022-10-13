@@ -10,6 +10,8 @@
     --cor4: #0303a0;
 
     --fontetitulo:'Rubik', Arial, Helvetica, sans-serif;
+
+    --b:1px solid black;
 }
 *{
     margin: 0px;
@@ -30,8 +32,8 @@ header > div#menu{
     right: 17.5px;
     height: 35px;
     width: 35px;
-    border-radius: 4px;
-    background-color: #7373e1;
+    border-radius: 7px;
+    background-color: #7a7aedc9;
     z-index: 1;
 }
 header > div#menu > div{
@@ -39,7 +41,7 @@ header > div#menu > div{
     width: 25px;
     margin: 8px 5px 0px 5px;
     border-radius: 20px;
-    background-color: #e0cc72;
+    background-color: rgba(0, 0, 0, 0.777);
     position: absolute;
 }
 header > div#menu > div#l2{
@@ -115,11 +117,11 @@ header > div#titulo > span{
     margin-top: 13px;
 }
 section#apresentacao{
-    height: 200px;
     padding-top: 12px;
+    padding-bottom: 40px;
 }
 section#apresentacao > p{
-    margin: 28px auto 0px auto;
+    margin: 62px auto 0px auto;
     width: 88vw;
     text-align: center;
     font-family: var(--fontetitulo);
@@ -127,11 +129,11 @@ section#apresentacao > p{
     border-radius: 5px;
 }
 section#apresentacao > div#botaosaibasm{
-    margin: 67px auto 0px auto;
+    margin: 85px auto 0px auto;
     width: 64vw;
     height: 70px;
     border: 2px solid black;
-    background-color: var(--cor4);    
+    background-color: #7373e131;    
     border-radius: 3px;
     display: flex;
     justify-content: space-around;
@@ -144,9 +146,8 @@ section#apresentacao > div#botaosaibasm > div > p{
     text-align: center;
     display: inline;
     font-family: var(--fontetitulo);
-    color: #e0cc72;
     font-size: 1.1em;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 70px;
 }
 section#apresentacao > div#botaosaibasm > div > img{
@@ -155,11 +156,33 @@ section#apresentacao > div#botaosaibasm > div > img{
     vertical-align: middle;
 }
 section#apresentacao > div#redessociais{
-    margin: 85px auto 0px auto;
-    width: 75vw;
+    margin: 100px auto 0px auto;
+    width: 65vw;
     display: flex;
     justify-content: space-around;
 }
 section#apresentacao > div#redessociais > img{
-    width: 52px;
+    width: 37px;
+}
+section#sobremim{
+    position:absolute;
+    height: 200vh;
+    width: 100vw;
+    background-color: #7373e131;
+}
+section#sobremim > h2{
+    width: fit-content;
+    margin: auto;
+    margin-top: 100px;
+    font-family: var(--fontetitulo);
+    color: var(--cor4);
+    font-weight: 900;
+    font-size: 1.1em;
+}
+section#sobremim > h3{
+    margin: auto;
+    width: fit-content;
+    font-size: 1.6em;    
+    font-family: var(--fontetitulo);    
+    font-weight: 800;
 }
