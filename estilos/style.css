@@ -31,14 +31,15 @@ header > div#menu{
     height: 35px;
     width: 35px;
     border-radius: 7px;
-    background-color: var(--cor1);
+    background-color: #7a7aedc9;
     z-index: 1;
 }
 header > div#menu > div{
     height: 3px;
     width: 25px;
     margin: 8px 5px 0px 5px;
-    background-color: black;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.777);
     position: absolute;
 }
 header > div#menu > div#l2{
@@ -124,6 +125,20 @@ section#apresentacao > p{
     font-family: var(--fontetitulo);
     font-size: 1.3em;
     border-radius: 5px;
+}
+section#apresentacao > div#botaosaibasm{
+    margin: 67px auto 0px auto;
+    padding: 20px;
+    width: 51vw;
+    outline: 2px solid black;
+    background-color: #7373e177;    
+    border-radius: 3px;
+}
+section#apresentacao > div#botaosaibasm > p{
+    text-align: center;
+    font-family: var(--fontetitulo);
+    font-size: 1.1em;
+    font-weight: 500;
 }
 section#apresentacao > div#redessociais{
     margin: 85px auto 0px auto;
