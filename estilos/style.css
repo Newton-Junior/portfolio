@@ -18,12 +18,10 @@
     margin: 0px;
     padding: 0px;
 }
-
 /*Configurações do header*/
 header{
     height:136px;
     position: relative;
-    background-color: #ffffff;
 }
 
 header > div#menu{
@@ -35,7 +33,7 @@ header > div#menu{
     width: 35px;
     border-radius: 4px;
     background-color: #7a7aedc9;
-    z-index: 1;
+    z-index: 2;
 }
 header > div#menu > div{
     height: 3px;
@@ -58,6 +56,7 @@ nav#naveg{
     height: 100vh;
     background-color:rgba(209, 209, 253, 0.744);
     display: none;
+    z-index: 1;
     opacity: 0;
     justify-content: space-around;
     align-items: center;
@@ -105,7 +104,7 @@ header > div#titulo{
 header > div#titulo > h1{
     font-family: 'Rubik', Arial, Helvetica, sans-serif;
     font-weight: 800;
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: rgb(47, 43, 43);
     line-height: .78em;
 }
@@ -126,7 +125,7 @@ section#apresentacao > p{
     width: 88vw;
     text-align: center;
     font-family: 'Play';
-    font-size: 1.65em;
+    font-size: 1.4em;
     border-radius: 5px;
     font-weight: 700;
     color: var(--cor4);
@@ -153,7 +152,7 @@ section#apresentacao > div#displays > img#desk{
     margin-bottom: -19px;
 }
 section#apresentacao > div#botaosaibasm{
-    margin: 115px auto 0px auto;
+    margin: 90px auto 0px auto;
     width: 64vw;
     height: 70px;
     border: 2px solid black;
@@ -180,7 +179,7 @@ section#apresentacao > div#botaosaibasm > div > img{
     vertical-align: middle;
 }
 section#apresentacao > div#redessociais{
-    margin: 150px auto 0px auto;
+    margin: 125px auto 0px auto;
     width: 65vw;
     display: flex;
     justify-content: space-around;
@@ -192,7 +191,7 @@ section#sobremim{
     position:absolute;
     height: 200vh;
     width: 100vw;
-    background-color: #7373e131;
+    background-color: #ddddff;
 }
 section#sobremim > h2{
     width: fit-content;
@@ -221,9 +220,25 @@ section#sobremim > p{
 section#sobremim > h3.afterfirsth3{
     margin-top: 35px;
 }
-section#sobremim > div.languages{
-    margin:20px 0px 0px 
+section#sobremim > article.skilltype{
+    width: 90vw;
+    margin: 20px auto 0px auto;
 }
-section#sobremim > div.languages > img{
-    width: 100px;
+section#sobremim > article.skilltype > div.languages{
+}
+section#sobremim > article.skilltype > div#html5,section#sobremim > article.skilltype > div#css3, div#git{
+    margin-top: 20px;
+}
+section#sobremim > article.skilltype > div.languages > img{
+    width: 45px;
+}
+section#sobremim > article.skilltype > div.languages > h4{
+    width: fit-content;
+    display: inline-block;
+    position: absolute;
+    line-height: 45px;
+    margin-left: 5px;
+}
+section#sobremim > article.skilltype > div.languages > p{
+    display: inline-block;
 }
