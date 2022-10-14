@@ -191,8 +191,17 @@ section#sobremim > h3{
 section#sobremim > p{
     text-align: center;
     width: 92vw;
-    margin: auto;
+    margin: 20px auto 0px auto;
     font-family: var(--fontetitulo);
     font-weight: 200;
     line-height: 1.5em;
+}
+section#sobremim > h3.afterfirsth3{
+    margin-top: 35px;
+}
+section#sobremim > div.languages{
+    margin:20px 0px 0px 
+}
+section#sobremim > div.languages > img{
+    width: 100px;
 }
