@@ -137,8 +137,13 @@ section#apresentacao > div#displays{
 section#apresentacao > div#displays > img{
     width: 45px;
 }
+section#apresentacao > div#displays > img#cellp{
+    margin-left: -13px;
+}
 section#apresentacao > div#displays > img#ipad{
-    width: 45px;
+    height: 75px;
+    width: 100px;
+    margin-right: -28px;
 }
 section#apresentacao > div#displays > img#note{
     width: 125px;
@@ -148,7 +153,7 @@ section#apresentacao > div#displays > img#note{
 section#apresentacao > div#displays > img#desk{
     width: 125px;
     margin-left: -20px;
-    margin-right: -10px;
+    margin-right: -35px;
     margin-bottom: -19px;
 }
 section#apresentacao > div#botaosaibasm{
@@ -189,7 +194,9 @@ section#apresentacao > div#redessociais > img{
 }
 section#sobremim{
     position:absolute;
-    height: 200vh;
+    height: fit-content;
+    padding-bottom: 100px;
+    font-family: var(--fontetitulo);
     width: 100vw;
     background-color: #ddddff;
 }
@@ -225,20 +232,37 @@ section#sobremim > article.skilltype{
     margin: 20px auto 0px auto;
 }
 section#sobremim > article.skilltype > div.languages{
+    border: 3.5px solid rgb(123, 123, 123);
+    border-radius: 5px;
+    height: 45px;
+    overflow: hidden;
+    display: flex;
 }
-section#sobremim > article.skilltype > div#html5,section#sobremim > article.skilltype > div#css3, div#git{
+section#sobremim > article.skilltype > div.languages > div{
+    border: var(--b);
+    width: fit-content;
+}
+section#sobremim > article.skilltype > div#html5,section#sobremim > article.skilltype > div#css3,section#sobremim > article.skilltype >  div#git{
     margin-top: 20px;
 }
-section#sobremim > article.skilltype > div.languages > img{
+section#sobremim > article.skilltype > div.languages > div > img{
     width: 45px;
 }
-section#sobremim > article.skilltype > div.languages > h4{
+section#sobremim > article.skilltype > div.languages > div > h4{
     width: fit-content;
     display: inline-block;
     position: absolute;
     line-height: 45px;
-    margin-left: 5px;
+    margin-left: 50px;
+    font-weight: 500;
 }
 section#sobremim > article.skilltype > div.languages > p{
     display: inline-block;
+    font-weight: 200;
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 0.85em;
+    margin: 45px 5px 5px 5px;
+}
+section#sobremim > article.skilltype > div#html5{
 }
