@@ -195,7 +195,7 @@ section#apresentacao > div#redessociais > img{
 section#sobremim{
     position:absolute;
     height: fit-content;
-    padding-bottom: 100px;
+    padding-bottom: 190px;
     font-family: var(--fontetitulo);
     width: 100vw;
     background-color: #ddddff;
@@ -219,42 +219,50 @@ section#sobremim > h3{
 section#sobremim > p{
     text-align: center;
     width: 92vw;
-    margin: 20px auto 0px auto;
+    margin: 35px auto 0px auto;
     font-family: var(--fontetitulo);
     font-weight: 200;
     line-height: 1.5em;
 }
 section#sobremim > h3.afterfirsth3{
-    margin-top: 35px;
+    margin-top: 75px;
 }
 section#sobremim > article.skilltype{
     width: 90vw;
-    margin: 20px auto 0px auto;
+    margin: 42px auto 0px auto;
 }
 section#sobremim > article.skilltype > div.languages{
-    border: 3.5px solid rgb(123, 123, 123);
-    border-radius: 5px;
     height: 45px;
     overflow: hidden;
     display: flex;
+    transition: height 1s ease;
 }
 section#sobremim > article.skilltype > div.languages > div{
-    border: var(--b);
-    width: fit-content;
+    width: 88%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
 }
-section#sobremim > article.skilltype > div#html5,section#sobremim > article.skilltype > div#css3,section#sobremim > article.skilltype >  div#git{
-    margin-top: 20px;
+section#sobremim > article.skilltype > div#html5,section#sobremim > article.skilltype > div#css3,section#sobremim > article.skilltype >  div#git,section#sobremim > article.skilltype >  div#github{
+    margin-top: 35px;
 }
 section#sobremim > article.skilltype > div.languages > div > img{
     width: 45px;
+    position: relative;
 }
 section#sobremim > article.skilltype > div.languages > div > h4{
     width: fit-content;
     display: inline-block;
-    position: absolute;
+    position: relative;
+    margin-left: 10px;
     line-height: 45px;
-    margin-left: 50px;
     font-weight: 500;
+}
+section#sobremim > article.skilltype > div.languages > div > img.setab{
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    margin-top: 15.5px;
 }
 section#sobremim > article.skilltype > div.languages > p{
     display: inline-block;
@@ -264,5 +272,15 @@ section#sobremim > article.skilltype > div.languages > p{
     font-size: 0.85em;
     margin: 45px 5px 5px 5px;
 }
-section#sobremim > article.skilltype > div#html5{
+section#sobremim > a > div{
+    margin-top: 60px;
+    border: var(--b);
+    width: fit-content;
+    padding: 10px;
+    position: absolute;
+    transform: translate(-50%,0%);
+    left: 50%;
+    color: white;
+    background-color: var(--cor4);
+    border-radius: 3px;
 }
