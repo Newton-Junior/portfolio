@@ -60,7 +60,7 @@ nav#naveg{
     opacity: 0;
     justify-content: space-around;
     align-items: center;
-    transition: opacity 1s;
+    transition: opacity 0.5s;
 }
 nav#naveg > ul{
     list-style: none;
@@ -161,7 +161,7 @@ section#apresentacao > div#botaosaibasm{
     width: 64vw;
     height: 70px;
     border: 2px solid black;
-    background-color: #7373e131;    
+    background-color: #9c6adf;    
     border-radius: 3px;
     display: flex;
     justify-content: space-around;
@@ -193,30 +193,31 @@ section#apresentacao > div#redessociais > img{
     width: 37px;
 }
 section#sobremim{
-    position:absolute;
+    padding-top: 1px;
     height: fit-content;
     padding-bottom: 190px;
     font-family: var(--fontetitulo);
     width: 100vw;
     background-color: #ddddff;
 }
-section#sobremim > h2{
+section#sobremim > h2.tit2,section#projetos > h2.tit2,section#contato > h2.tit2{
     width: fit-content;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 90px;
     font-family: var(--fontetitulo);
     color: var(--cor4);
     font-weight: 900;
     font-size: 1.1em;
 }
-section#sobremim > h3{
+section#sobremim > h3.tit3,section#projetos > h3.tit3,section#sobremim > h3.afterfirsth3,section#contato > h3.tit3{
     margin: auto;
-    width: fit-content;
+    width: 90vw;
     font-size: 1.6em;    
     font-family: var(--fontetitulo);    
     font-weight: 800;
+    text-align: center;
 }
-section#sobremim > p{
+section#sobremim > p,section#contato > p{
     text-align: center;
     width: 92vw;
     margin: 35px auto 0px auto;
@@ -280,7 +281,50 @@ section#sobremim > a > div{
     position: absolute;
     transform: translate(-50%,0%);
     left: 50%;
-    color: white;
-    background-color: var(--cor4);
+    color: black;
+    background-color: #9c6adf;
     border-radius: 3px;
+}
+section#projetos{
+    height: fit-content;
+    padding-bottom: 120px;
+}
+section#projetos > div{
+    margin-top: 65px;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+section#projetos > div > div#projeto1{
+}
+section#projetos > div > div#projeto2,section#projetos > div > div#projeto3{
+}
+section#projetos > div > div.projeto{
+    background-color: #7373e1b5;
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+section#projetos > div > div.projeto > div.message{
+    background-color: rgb(240, 240, 240);
+    font-family: var(--fontetitulo);
+    color: rgb(58, 58, 58);
+    font-size: 1.25em;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    width: 350px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding: 17px 0px 17px 0px;
+    transform-origin: 100% 50%;
+    transform: translate(-29.3%, -50%) rotate(-45deg);
+}
+section#contato{
+    background-color: #ddddff;
+    height: 150vh;
+    padding-top: 1px;
 }
