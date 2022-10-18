@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+@media only screen and (orientation:landscape) {
+    section#projetos > div{
+        flex-direction: row;
+        height: 60vh;
+    }
+    section#projetos > div > div.projeto{
+        transform: scale(0.7);
+    }
+    section#contato > div{
+        flex-direction: row;
+    }    
+}

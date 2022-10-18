@@ -199,7 +199,6 @@ section#sobremim{
     height: fit-content;
     padding-bottom: 190px;
     font-family: var(--fontetitulo);
-    width: 100vw;
     background-color: #ddddff;
 }
 section#sobremim > h2.tit2,section#projetos > h2.tit2,section#contato > h2.tit2{
@@ -341,40 +340,46 @@ section#contato > p#p1{
     font-weight: 600;
 }
 section#contato > div{
-    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+}
+section#contato > div > div{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-section#contato > div > a{
+section#contato > div > div > a{
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
     text-decoration: none;
 }
-section#contato > div > a > img{
+section#contato > div > div > a > img{
     width: 60px;
 }
-section#contato > div > a > img#phone{
+section#contato > div > div > a > img#phone{
     transform: rotate(-45deg);
 }
-section#contato > div > a > h4{
+section#contato > div > div > a > h4{
     color: var(--cor4);
     margin-top: 7px;
     font-weight: 700;
 }
-section#contato > div > a > p{
+section#contato > div > div > a > p{
     margin-top: 15px;
     font-size: 0.85em;
     font-weight: 500;
     color: rgb(94, 94, 94);
 }
 footer{
-    height: 20vh;
     background-color: #3f295b;
     padding-top: 1px;
+    padding-bottom: 15px;
 }
 footer > p#p1{
     margin-top: 5px;
@@ -390,10 +395,9 @@ footer > div{
     justify-content: space-around;
 }
 footer > div > img{
-    width: 25px;px;
+    width: 25px;
 }
 footer > div > img#github{
-    border: var(--b);
     border-radius: 5px;
     background-color: white;
 }
