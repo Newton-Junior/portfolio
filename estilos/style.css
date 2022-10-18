@@ -327,8 +327,18 @@ section#projetos > div > div.projeto > div.message{
 }
 section#contato{
     background-color: #ddddff;
-    height: 150vh;
+    height: 117vh;
     padding-top: 1px;
+    text-decoration: none;
+}
+section#contato > p{
+    margin-top: 5px;
+    font-size: 0.75em;
+}
+section#contato > p#p1{
+    margin-top: 65px;
+    font-size: 0.68em;
+    font-weight: 600;
 }
 section#contato > div{
     margin-top: 60px;
@@ -338,14 +348,14 @@ section#contato > div{
     align-items: center;
 }
 section#contato > div > a{
-    border: var(--b);
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+    text-decoration: none;
 }
 section#contato > div > a > img{
-    width: 70px;
+    width: 60px;
 }
 section#contato > div > a > img#phone{
     transform: rotate(-45deg);
@@ -360,4 +370,30 @@ section#contato > div > a > p{
     font-size: 0.85em;
     font-weight: 500;
     color: rgb(94, 94, 94);
+}
+footer{
+    height: 20vh;
+    background-color: #3f295b;
+    padding-top: 1px;
+}
+footer > p#p1{
+    margin-top: 5px;
+}
+footer > p{
+    text-align: center;
+    font-weight: 300;
+    color: rgb(165, 165, 165);
+}
+footer > div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+footer > div > img{
+    width: 25px;px;
+}
+footer > div > img#github{
+    border: var(--b);
+    border-radius: 5px;
+    background-color: white;
 }
