@@ -17,6 +17,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: var(--fontetitulo);
 }
 /*Configurações do header*/
 header{
@@ -143,6 +144,7 @@ section#apresentacao > div#displays > img#cellp{
 section#apresentacao > div#displays > img#ipad{
     height: 75px;
     width: 100px;
+    margin-bottom: -3px;
     margin-right: -28px;
 }
 section#apresentacao > div#displays > img#note{
@@ -327,4 +329,35 @@ section#contato{
     background-color: #ddddff;
     height: 150vh;
     padding-top: 1px;
+}
+section#contato > div{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+section#contato > div > a{
+    border: var(--b);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+section#contato > div > a > img{
+    width: 70px;
+}
+section#contato > div > a > img#phone{
+    transform: rotate(-45deg);
+}
+section#contato > div > a > h4{
+    color: var(--cor4);
+    margin-top: 7px;
+    font-weight: 700;
+}
+section#contato > div > a > p{
+    margin-top: 15px;
+    font-size: 0.85em;
+    font-weight: 500;
+    color: rgb(94, 94, 94);
 }
