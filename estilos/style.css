@@ -252,6 +252,9 @@ section#sobremim > article.skilltype > div.languages > div > img{
     width: 45px;
     position: relative;
 }
+section#sobremim > article.skilltype > div.languages > div > img#logojs{
+    width: 44px;
+}
 section#sobremim > article.skilltype > div.languages > div > h4{
     width: fit-content;
     display: inline-block;
