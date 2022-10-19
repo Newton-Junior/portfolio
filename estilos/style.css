@@ -26,6 +26,7 @@ header{
 }
 
 header > div#menu{
+    cursor: pointer;
     justify-content: space-around;
     position: fixed;
     top: 14px;
@@ -239,7 +240,8 @@ section#sobremim > article.skilltype > div.languages{
     display: flex;
     transition: height 1s ease;
 }
-section#sobremim > article.skilltype > div.languages > div{
+section#sobremim > article.skilltype > div.languages > div{    
+    cursor: pointer;
     width: 88%;
     position: absolute;
     display: flex;
