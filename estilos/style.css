@@ -19,10 +19,16 @@
     padding: 0px;
     font-family: var(--fontetitulo);
 }
+body{
+    padding-top: 150px;
+}
 /*Configurações do header*/
 header{
-    height:136px;
-    position: relative;
+    height:400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 
 header > div#menu{
@@ -90,25 +96,21 @@ nav#naveg > ul > li > a{
 header > div#foto{
     background: var(--cor1) url(../imagens/foto.png) -3px center no-repeat;
     background-size: 100%;
-    margin: 18px 0px 0px 18px;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     display: inline-block;
 }
 header > div#titulo{
-    display: inline-block;
-    position: absolute;
-    left:136px;
-    top: 50%;
-    transform: translate(0px, -50%);
 }
 header > div#titulo > h1{
     font-family: 'Rubik', Arial, Helvetica, sans-serif;
-    font-weight: 800;
-    font-size: 1.5em;
+    font-weight: 700;
+    font-size: 2em;
     color: rgb(47, 43, 43);
-    line-height: .78em;
+    line-height: 1.5em;
+    text-align: center;
+    width: 700px;
 }
 header > div#titulo > span{
     display: block;
