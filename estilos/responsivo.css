@@ -14,7 +14,7 @@
 }
 @media only screen and (min-width:780px){
     header{
-        width: 75vw;
+        width: 100%;
         margin: auto;
         font-size: 1.3em;
     }

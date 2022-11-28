@@ -20,17 +20,28 @@
     font-family: var(--fontetitulo);
 }
 body{
-    padding-top: 150px;
 }
 /*Configurações do header*/
-header{
-    height:400px;
+header{  
+    padding-top: 125px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    background-image: url(../fundo1.jpg);
+    background-size: cover;
+    background-position: 0px -150px;
+    background-attachment: fixed;
 }
-
+header > img#logo{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 90px;
+    display: grid;
+    border-radius: 50%;
+}
 header > div#menu{
     cursor: pointer;
     justify-content: space-around;
@@ -94,12 +105,13 @@ nav#naveg > ul > li > a{
     
 
 header > div#foto{
-    background: var(--cor1) url(../imagens/foto.png) -3px center no-repeat;
+    background: #0000728a url(../imagens/foto.png) -3px center no-repeat;
     background-size: 100%;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     display: inline-block;
+    margin-top: 40px;
 }
 header > div#titulo{
 }
@@ -107,7 +119,7 @@ header > div#titulo > h1{
     font-family: 'Rubik', Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 2em;
-    color: rgb(47, 43, 43);
+    color: #000072;
     line-height: 1.5em;
     text-align: center;
     width: 700px;
@@ -166,10 +178,11 @@ section#apresentacao > div#botaosaibasm{
     width: 64vw;
     height: 70px;
     border: 2px solid black;
-    background-color: #9c6adf;    
+    background-color: #00000016;    
     border-radius: 3px;
     display: flex;
     justify-content: space-around;
+    cursor: pointer;
 }
 section#apresentacao > div#botaosaibasm > div{
     display: inline-block;
@@ -198,11 +211,13 @@ section#apresentacao > div#redessociais > img{
     width: 37px;
 }
 section#sobremim{
+    margin-bottom: 0px;
     padding-top: 1px;
     height: fit-content;
     padding-bottom: 190px;
     font-family: var(--fontetitulo);
-    background-color: #ddddff;
+    background-color: #7373e169;
+    outline: var(--b);
 }
 section#sobremim > h2.tit2,section#projetos > h2.tit2,section#contato > h2.tit2{
     width: fit-content;
@@ -294,8 +309,14 @@ section#sobremim > a > div{
     border-radius: 3px;
 }
 section#projetos{
+    margin-top: 0px;
     height: fit-content;
     padding-bottom: 120px;
+    background-image: url(../fundo2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    outline: var(--b);
 }
 section#projetos > div{
     margin-top: 65px;

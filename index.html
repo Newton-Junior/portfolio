@@ -7,89 +7,6 @@
     <title>Portifólio de Newton Lemes</title>
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/responsivo.css">
-    <script>
-        var closeornot=1;
-        var opacitySet=0;
-        var displaySet=0;
-        function alteraDisplay(){
-            if(displaySet==0){
-                document.getElementById("naveg").style.display="flex";
-                displaySet=1;
-            }else{
-                displaySet=0;
-                document.getElementById("naveg").style.display="none";
-            }
-        }
-        function alteraOpacity(){
-            if(opacitySet==0){
-                document.getElementById("naveg").style.opacity="1";
-                opacitySet=1;
-            }else{
-                document.getElementById("naveg").style.opacity="0";
-                opacitySet=0;
-            }
-        }
-        function exibeMenu(){
-            if(closeornot == 1){
-                alteraDisplay();
-                setTimeout(alteraOpacity,1);
-                closeornot=2;
-            }else{ 
-                setTimeout(alteraDisplay,1000);
-                setTimeout(alteraOpacity,1);         
-                closeornot=1;
-            }
-        };
-        let descset1 = 0;let descset2 = 0; let descset3 = 0; let descset4 = 0; let descset5 = 0;
-
-        function apareceDesc(desc){
-            if(desc == 1){
-                if(descset1==0){
-                    document.getElementById("javasc").style.height="125px";
-                    descset1=1;
-                }else{
-                    document.getElementById("javasc").style.height="45px";
-                    descset1=0;
-                }
-            }
-            if(desc == 2){
-                if(descset2==0){
-                    document.getElementById("html5").style.height="147px";
-                    descset2=1;
-                }else{
-                    document.getElementById("html5").style.height="45px";
-                    descset2=0;
-                }
-            }
-            if(desc == 3){
-                if(descset3==0){
-                    document.getElementById("css3").style.height="185px";
-                    descset3=1;
-                }else{
-                    document.getElementById("css3").style.height="45px";
-                    descset3=0;
-                }
-            }
-            if(desc == 4){
-                if(descset4==0){
-                    document.getElementById("git").style.height="145px";
-                    descset4=1;
-                }else{
-                    document.getElementById("git").style.height="45px";
-                    descset4=0;
-                }
-            }
-            if(desc == 5){
-                if(descset5==0){
-                    document.getElementById("github").style.height="188px";
-                    descset5=1;
-                }else{
-                    document.getElementById("github").style.height="45px";
-                    descset5=0;
-                }
-            }
-        }
-    </script>
 </head>
 <body>
     <header>
@@ -98,10 +15,22 @@
             <div id="l2"></div>
             <div id="l3"></div>
         </div>
+        <img id="logo" src="logo.png" alt="Meu logo pessoal">
         <div id="titulo">
-            <h1>Oi, eu me chamo Newton e sou desenvolvedor Front-end</h1>         
+            <h1>Oi, eu me chamo Newton e sou desenvolvedor <span class="input"></span></h1>         
         </div>  
-        <div id="foto"></div>        
+        <div id="foto"></div>
+        <section id="apresentacao">
+            <p></p>   
+            <div id="botaosaibasm">
+                <div><p>Saiba mais sobre mim</p><img src="imagens/down.png" alt="Seta para baixo"></div>
+            </div>
+    
+            <div id="redessociais"><img src="imagens/icones/linkedin.png" alt="Ícone e link do meu LinkedIn pessoal">
+            <img src="imagens/icones/github.png" alt="Ícone e link para meu Github pessoal">
+            <img src="imagens/icones/instagram.png" alt="Ícone e link para meu Instagram pessoal"></div>
+    
+        </section>
     </header>
     <nav id="naveg">
         <ul>
@@ -111,20 +40,7 @@
             <li><a href="#">Contato</a></li>
         </ul>
     </nav>
-    <section id="apresentacao">
-        <p></p>
-
-        <div id="displays"><img id="cellp" src="imagens/cellphone1.png" alt="Imagem de celular"><img id="note" src="imagens/laptop1.png" alt="Imagem de um notebook"><img id="desk" src="imagens/desktop1.png" alt="Imagem de um monitor de desktop"><img id="ipad" src="imagens/cellphone1.png" alt="Imagem de um iPad"></div>
-
-        <div id="botaosaibasm">
-            <div><p>Saiba mais sobre mim</p><img src="imagens/down.png" alt="Seta para baixo"></div>
-        </div>
-
-        <div id="redessociais"><img src="imagens/icones/linkedin.png" alt="Ícone e link do meu LinkedIn pessoal">
-        <img src="imagens/icones/github.png" alt="Ícone e link para meu Github pessoal">
-        <img src="imagens/icones/instagram.png" alt="Ícone e link para meu Instagram pessoal"></div>
-
-    </section>
+    
     <section id="sobremim">
         <h2 class="tit2">Sobre mim</h2>
         <h3 class="tit3">Quem sou eu</h3>
@@ -217,6 +133,7 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
