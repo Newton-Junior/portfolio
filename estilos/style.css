@@ -217,7 +217,6 @@ section#sobremim{
     padding-bottom: 190px;
     font-family: var(--fontetitulo);
     background-color: #7373e169;
-    outline: var(--b);
 }
 section#sobremim > h2.tit2,section#projetos > h2.tit2,section#contato > h2.tit2{
     width: fit-content;
@@ -312,11 +311,8 @@ section#projetos{
     margin-top: 0px;
     height: fit-content;
     padding-bottom: 120px;
-    background-image: url(../fundo2.jpg);
     background-size: cover;
     background-attachment: fixed;
-    
-    outline: var(--b);
 }
 section#projetos > div{
     margin-top: 65px;
