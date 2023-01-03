@@ -61,8 +61,8 @@ function exibeMenu(){
 //         }
 //     }
 // }
-// var typed = new Typed(".input", {
-//     strings:["front-end"],
-//     typeSpeed: 120,
-//     backSpeed: 110
-// })
+var typed = new Typed(".input", {
+    strings:["front-end"],
+    typeSpeed: 120,
+    backSpeed: 110
+})

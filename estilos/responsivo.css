@@ -19,9 +19,6 @@
         font-size: 1.3em;
     }
     header > div#menu{
-        transform: scale(1.5);
-        top: 35px;
-        right: 35px;
     }
     section#apresentacao{
         padding-bottom: 75px;
@@ -48,7 +45,7 @@
     section#sobremim{
         height: 110vh;
     }
-    section#sobremim > h2.tit2,section#projetos > h2.tit2,section#contato > h2.tit2{
+    section#sobremim > h2.tit2,section#contato > h2.tit2{
         margin-top: 120px;
         font-size: 1.6em;
     }

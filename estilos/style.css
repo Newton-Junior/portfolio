@@ -15,8 +15,6 @@
     --b:1px solid black;
 }
 *{
-    margin: 0px;
-    padding: 0px;
     font-family: var(--fontetitulo);
 }
 body{
@@ -46,40 +44,36 @@ header > div#menu{
     cursor: pointer;
     justify-content: space-around;
     position: fixed;
-    top: 14px;
-    right: 14px;
-    height: 35px;
-    width: 35px;
-    border-radius: 4px;
-    background-color: #7a7aedc9;
+    top: 50px;
+    right: 50px;
+    height: 60px;
+    width: 60px;
+    border-radius: 4px;    
+    background-color: #ff8b8b00;;
     z-index: 2;
 }
 header > div#menu > div{
-    height: 3px;
-    width: 25px;
-    margin: 8px 5px 0px 5px;
-    border-radius: 5px;
-    background-color: var(--cor4);
-    position: absolute;
+    height: 7px;
+    width: 50px;
+    margin: 11px 5px 0px 5px;
+    border-radius: 2px;
+    background-color: #241e46;
+    position: relative;
 }
-header > div#menu > div#l2{
-    margin-top: 16px;
-}
-header > div#menu > div#l3{
-    margin-top: 24px;
-}
-nav#naveg{
+nav#naveg{        
+	box-shadow:10px 10px 5px 1px #888;
     position: fixed;
     top: 0px;
     width: 100vw;
     height: 100vh;
-    background-color:rgba(209, 209, 253, 0.744);
+    background-color:rgba(0, 0, 0, 0.674);
     display: none;
     z-index: 1;
     opacity: 0;
     justify-content: space-around;
     align-items: center;
     transition: opacity 0.5s;
+	backdrop-filter: blur(10px);
 }
 nav#naveg > ul{
     list-style: none;
@@ -98,28 +92,30 @@ nav#naveg > ul > li{
 }
 nav#naveg > ul > li > a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: 'Rubik';
-    font-weight: 500;
+    font-size: 1.6em;
+    font-weight: 600;
 }
     
 
 header > div#foto{
-    background: #0000728a url(../imagens/foto.png) -3px center no-repeat;
+    background: #00007277 url(../imagens/foto.png) -3px center no-repeat;
     background-size: 100%;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 40px;    
+    backdrop-filter: blur(3px)
 }
 header > div#titulo{
 }
 header > div#titulo > h1{
     font-family: 'Rubik', Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 2em;
-    color: #000072;
+    color: #241e46;
     line-height: 1.5em;
     text-align: center;
     width: 700px;
@@ -182,7 +178,8 @@ section#apresentacao > div#botaosaibasm{
     border-radius: 3px;
     display: flex;
     justify-content: space-around;
-    cursor: pointer;
+    cursor: pointer;    
+    backdrop-filter: blur(3px)
 }
 section#apresentacao > div#botaosaibasm > div{
     display: inline-block;
@@ -216,9 +213,10 @@ section#sobremim{
     height: fit-content;
     padding-bottom: 190px;
     font-family: var(--fontetitulo);
-    background-color: #7373e169;
+    background-color: #f0f0f0;
+    background: linear-gradient(#f0f0f0,#afafaf);
 }
-section#sobremim > h2.tit2,section#projetos > h2.tit2,section#contato > h2.tit2{
+section#sobremim > h2.tit2,section#contato > h2.tit2{
     width: fit-content;
     margin: auto;
     margin-top: 90px;
@@ -296,16 +294,18 @@ section#sobremim > article.skilltype > div.languages > p{
     margin: 45px 5px 5px 5px;
 }
 section#sobremim > a > div{
+    width: 64vw;
+    height: 70px;
+    border: 2px solid black;
+    background: linear-gradient(#00000016, #0a0ac47b); 
+    border-radius: 3px;
+    backdrop-filter: blur(3px);
     margin-top: 60px;
-    border: var(--b);
-    width: fit-content;
     padding: 10px;
     position: absolute;
     transform: translate(-50%,0%);
     left: 50%;
     color: black;
-    background-color: #9c6adf;
-    border-radius: 3px;
 }
 section#projetos{
     margin-top: 0px;
@@ -313,6 +313,7 @@ section#projetos{
     padding-bottom: 120px;
     background-size: cover;
     background-attachment: fixed;
+    background: linear-gradient(#afafaf,white);
 }
 section#projetos > div{
     margin-top: 65px;
@@ -321,6 +322,14 @@ section#projetos > div{
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
+}
+section#projetos > h2{
+    width: fit-content;
+    margin: auto;
+    font-family: var(--fontetitulo);
+    color: var(--cor4);
+    font-weight: 900;
+    font-size: 1.1em;
 }
 section#projetos > div > div#projeto1{
 }
